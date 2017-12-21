@@ -22,9 +22,11 @@ import java.io.IOException;
 public class MyService extends IntentService {
 
     public static final String TAG = "MyService";
+
     public static final String MY_SERVICE_MESSAGE = "myServiceMessage";
     public static final String MY_SERVICE_PAYLOAD = "myServicePayload";
     public static final String MY_SERVICE_EXCEPTION = "myServiceException";
+
     public static final String REQUEST_ENDPOINT = "endPoint";
     public static final String REQUEST_METHOD = "method";
     public static final String BUILDING_NAME = "bName";
@@ -44,6 +46,7 @@ public class MyService extends IntentService {
     protected void onHandleIntent(Intent intent) {
 
         String endpoint = intent.getStringExtra(REQUEST_ENDPOINT);
+        //method could be used to determine which function to call
         String method = intent.getStringExtra(REQUEST_METHOD);
 
         RequestBody requestBody = new MultipartBody.Builder()
@@ -56,7 +59,6 @@ public class MyService extends IntentService {
 
         String user = "YOUR USERNAME";
         String pass = "YOUR PASSWORD";
-
         String credentials = Credentials.basic(user, pass);
 
         Request request = new Request.Builder()
