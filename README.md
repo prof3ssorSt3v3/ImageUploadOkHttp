@@ -14,3 +14,5 @@ Additional resources for working with OkHttp
 [Download a file with OkHttp](https://howtoprogram.xyz/2016/11/17/download-a-file-with-okhttp/)
 
 [OkHttp Recipes and Examples](https://github.com/square/okhttp/wiki/Recipes)
+
+[Reference for Doors-Open API adding a building](https://doors-open-ottawa.mybluemix.net/api-docs/#api-Buildings-PostBuilding)
