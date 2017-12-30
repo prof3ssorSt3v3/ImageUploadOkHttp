@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
     private final static int CAMERA_REQUEST_CODE = 100;
     private ImageView photoView;
-    private static final String JSON_URL = "https://doors-open-ottawa.mybluemix.net/buildings";
+    //private static final String JSON_URL = "https://doors-open-ottawa.mybluemix.net/buildings"; //OLD endpoint
+    public static final String JSON_URL = "https://doors-open-ottawa.mybluemix.net/buildings/form"; //NEW endpoint
 
     private BroadcastReceiver mBR = new BroadcastReceiver() {
         @Override
